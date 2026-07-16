@@ -8,3 +8,13 @@ terraform {
     }
   }
 }
+
+
+terraform {
+
+  backend "s3" {
+    bucket = "my-example-bucket-cloudcamp-123456"
+    key    = "terraform/states/tf_state"
+    region = "us-east-1"
+  }
+}
